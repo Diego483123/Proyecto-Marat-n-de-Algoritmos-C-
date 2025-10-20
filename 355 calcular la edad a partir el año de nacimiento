@@ -2,15 +2,13 @@
 using namespace std;
 
 int main() {
-    float monto, total;
-    cout << "Ingrese el monto de compra: ";
-    cin >> monto;
+    int anioNacimiento, anioActual;
+    cout << "Ingrese su año de nacimiento: ";
+    cin >> anioNacimiento;
+    cout << "Ingrese el año actual: ";
+    cin >> anioActual;
 
-    if (monto > 500) total = monto * 0.9;
-    else if (monto > 200) total = monto * 0.95;
-    else total = monto;
-
-    cout << "Total a pagar: $" << total;
+    cout << "Su edad es: " << anioActual - anioNacimiento << " años.";
 
     return 0;
 }
